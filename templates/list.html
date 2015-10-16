@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>{{ title }}</title>
@@ -7,6 +6,26 @@
     </head>
     <body>
         <h1>Series recommendations</h1>
-        <div></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Short description</th>
+                    <th>Season count</th>
+                    <th>Episodes / season</th>
+                    <th>Episode length</th>
+                    <th>Trailer / intro</th>
+                    <th>Person recommending</th>
+                    <th>Associated links</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for recommendation in recommendations %}
+                    <tr>
+                        <td>{{ recommendation.title }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </body>
 </html>
