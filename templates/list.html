@@ -23,6 +23,13 @@
                 {% for recommendation in recommendations %}
                     <tr>
                         <td>{{ recommendation.title }}</td>
+                        <td>{{ recommendation.description }}</td>
+                        <td>{{ recommendation.season_count }}</td>
+                        <td>{{ recommendation.episodes_per_season }}</td>
+                        <td>{{ recommendation.episode_length }}</td>
+                        <td><a href="{{ recommendation.trailer }}">Trailer</a></td>
+                        <td>{{ recommendation.person }}</td>
+                        <td>{{ recommendation.associated_links }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
