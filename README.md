@@ -17,5 +17,9 @@ Simple training project written in Python. Its purpose is to provide a platform 
 1. Open `http://localhost:5000` in browser of choice
 
 ## To do
-* Write SQLite part of the application
+Ideas are presented in order of importance, as perceived:
+
+* Write and test insert form
+* Find a way to include CSSes correctly
 * Dockerize the installation process
+* Create better error handling, especially re: database errors
