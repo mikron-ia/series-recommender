@@ -1,0 +1,28 @@
+{% extends "layouts/default.html" %}
+{% block content %}
+<form action="add_action" method="post">
+    <label for="title">Series title</label>
+    <input id="title" name="title" type="text" />
+    
+    <label for="description">Series title</label>
+    <textarea id="description" name="description"></textarea>
+    
+    <label for="season-count">Description</label>
+    <input id="season-count" name="season_count" type="number" />
+    
+    <label for="episodes-per-season">Episodes per season</label>
+    <input id="episodes-per-season" name="episodes_per_season" type="number" />
+    
+    <label for="episode-length">Length of the episode [min]</label>
+    <input id="episode-length" name="episode_length" type="number" />
+    
+    <label for="trailer">Link to a video / trailer</label>
+    <input id="trailer" name="trailer" type="text" />
+    
+    <label for="person">Person recommending</label>
+    <input id="person" name="person" type="text" />
+    
+    <label for="associated-links">Associated links</label>
+    <textarea id="associated-links" name="associated_links"></textarea>
+</form>
+{% endblock %}

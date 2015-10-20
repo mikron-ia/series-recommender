@@ -26,7 +26,7 @@ def make_dictionaries(cursor, row):
         for idx, value in enumerate(row))
 
 def get_list_of_recommendations():
-    sql = 'SELECT title, description, season_count, episodes_per_season, episode_length, trailer, person, associated_links FROM recommendation'
+        sql = 'SELECT title, description, season_count, episodes_per_season, episode_length, trailer, person, associated_links FROM recommendation'
         
     cursors = connect().execute(sql)    
     rows = cursors.fetchall()
